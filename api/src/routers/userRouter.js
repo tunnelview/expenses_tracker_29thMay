@@ -1,15 +1,16 @@
-import express from 'express';
+import express from "express";
 const router = express.Router();
 
+router.post("/", async (req, res) => {
+  console.log(req.body);
 
-
-router.post("/", (req, res) =>{
- console.log(req.body)
-    res.json({
-        status: "success",
-        message: "user created successfully"
-    })
-
-})
+  //send data to db query
+  const result = await createTable(req.body);
+  console.log(result);
+  res.json({
+    status: "success",
+    message: "user created successfully",
+  });
+});
 
 export default router;
