@@ -21,3 +21,6 @@ const UserSchema = new mangoose.Schema(
   },
   { timestamps: true }
 ); // it will create created app date and updated date
+
+mongoose.model("User", UserSchema); //users We just created a new schema called
+// UserSchema, now time to convert that schema into a real table in our database
