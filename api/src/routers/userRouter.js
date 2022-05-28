@@ -1,4 +1,6 @@
 import express from "express";
+import { createTable } from "../modules/User.model.js";
+
 const router = express.Router();
 
 router.post("/", async (req, res) => {

@@ -1,4 +1,4 @@
-import UserSchema from "./User.schema.js";
+import UserSchema from "./user/User.schema.js";
 
 //create a new user in the table
 export const createTable = (newUserObj) => {
