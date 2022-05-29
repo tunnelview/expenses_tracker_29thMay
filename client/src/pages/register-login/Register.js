@@ -20,7 +20,7 @@ export const Register = () => {
   return (
     <Layout>
       <div className="center">
-        <Form>
+        <Form onSubmit={handleOnSubmit}>
           <FormGroup>
             <Form.Label htmlFor="inputPassword5">Name </Form.Label>
             <Form.Control
